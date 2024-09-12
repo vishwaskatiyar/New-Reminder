@@ -1,46 +1,45 @@
 # Task Scheduler Application
 
-This project is a _Task Scheduler_ that allows users to create scheduled tasks via a web interface. The tasks are sent to an email address at the scheduled time. The backend leverages cron for scheduling and nodemailer for sending emails. All task logs are stored in MongoDB for reference.
+## Overview
 
-## Features
+The **Task Scheduler** is a web application that enables users to create and manage scheduled tasks through an intuitive interface. Users can specify tasks, set a schedule in cron format, and receive notifications via email when tasks are executed. The application leverages **Node.js**, **MongoDB**, and **Nodemailer** to provide a reliable scheduling and email delivery service.
 
-- Add tasks with a description, email, and schedule (in cron format).
-- Scheduled emails are sent to the specified email address at the scheduled time.
-- View all scheduled tasks in a list.
+## Key Features
 
-## Live Hosted Version
+- **Task Management**: Add tasks with a detailed description, an email address for notifications, and a customizable schedule using cron syntax.
+- **Email Notifications**: Scheduled emails are automatically sent to the specified addresses at the designated times.
+- **Task Overview**: Users can view all scheduled tasks in a comprehensive list.
 
-The project is live and can be accessed for backend [here](https://taskscheduler-5ij8.onrender.com).
+## Live Demo
 
-The project is live and can be accessed for frontend [here](https://task-scheduler-azure.vercel.app/).
+- **Backend**: [View Backend](https://new-reminder.onrender.com)
+- **Frontend**: [View Frontend]("https://new-reminder.vercel.app/")
 
 ## API Documentation
 
-- POST /api/tasks: Add a new task (schedule an email).
-  - Body:
-    json
-    {
-    "task": "Task description",
-    "email": "example@example.com",
-    "schedule": "cron expression"
-    }
-- GET /api/tasks: Retrieve all scheduled tasks.
+### Endpoints
 
----
+- **POST /api/tasks**: Schedule a new task (send an email).
+
+  - **Request Body**:
+    ```json
+    {
+      "task": "Task description",
+      "email": "example@example.com",
+      "schedule": "cron expression"
+    }
+    ```
+
+- **GET /api/tasks**: Retrieve a list of all scheduled tasks.
 
 ## Project Setup Instructions
 
 ### 1. Installation
 
-#### Backend
+#### Backend Setup
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/ashpatni20/TaskScheduler.git
    cd task-scheduler/backend
-
-
-
-   ygQvO4PKpinHyXLA
    ```

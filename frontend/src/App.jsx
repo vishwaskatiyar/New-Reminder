@@ -12,7 +12,7 @@ function App() {
     // Send task to the backend
     try {
       const response = await fetch(
-        "https://taskscheduler-5ij8.onrender.com/api/tasks",
+        "https://new-reminder.onrender.com/api/tasks",
         {
           method: "POST",
           headers: {

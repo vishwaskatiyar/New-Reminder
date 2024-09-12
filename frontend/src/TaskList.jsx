@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 // import './TaskList.css'; // Import the CSS file
 
 function TaskList() {
@@ -7,15 +7,17 @@ function TaskList() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch('https://taskscheduler-5ij8.onrender.com/api/tasks');
+        const response = await fetch(
+          "https://new-reminder.onrender.com/api/tasks"
+        );
         if (response.ok) {
           const data = await response.json();
           setTasks(data);
         } else {
-          console.error('Error fetching tasks');
+          console.error("Error fetching tasks");
         }
       } catch (error) {
-        console.error('Network error:', error);
+        console.error("Network error:", error);
       }
     };
 
