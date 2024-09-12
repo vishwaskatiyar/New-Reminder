@@ -13,7 +13,7 @@ The **Task Scheduler** is a web application that enables users to create and man
 ## Live Demo
 
 - **Backend**: [View Backend](https://new-reminder.onrender.com)
-- **Frontend**: [View Frontend]("https://new-reminder.vercel.app/")
+- **Frontend**: [View Frontend](https://new-reminder.vercel.app/)
 
 ## API Documentation
 
